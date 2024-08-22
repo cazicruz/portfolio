@@ -164,7 +164,7 @@ header {
     background-color: #98a7fc;
     overflow: hidden;
     margin-bottom: 2rem;
-    background-image: url('/asset/OD4.png') ;
+    background-image: url('./asset/OD4.png') ;
     background-size: cover;
     background-position: center;
     /* object-fit: contain;
