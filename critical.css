@@ -1,0 +1,156 @@
+/* Critical CSS for above-the-fold content */
+:root {
+    --main-color: #0ef;
+    --text-color: #333;
+    --container-color: #fff;
+    --text-color-light: #666;
+    --container-color-dark: #1a1a1a;
+    --text-color-dark: #fff;
+    --text-color-light-dark: #ccc;
+    --main-color-light: #4dffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--container-color);
+    color: var(--text-color);
+}
+
+/* Header Styles */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--container-color);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+/* Home Section */
+.home {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home-img {
+    flex: 1;
+}
+
+.home-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.home-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.color {
+    color: var(--main-color);
+}
+
+.home-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: var(--main-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img {
+        margin-bottom: 2rem;
+    }
+
+    .navbar {
+        display: none;
+    }
+} 
