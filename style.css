@@ -112,6 +112,8 @@ header {
     cursor: pointer;
     z-index: 200;
     transition: 0.3s;
+    background-color: var(--container-color);
+    padding: 5px;
 }
 
 .menu-icon div {
@@ -120,6 +122,7 @@ header {
     height: 2px;
     width: 24px;
     transition: 0.3s;
+    border-radius: 2px;
 }
 
 .move .line1 {
@@ -155,14 +158,14 @@ header {
 }
 
 .home-img {
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #98a7fc;
     overflow: hidden;
+    object-fit: cover;
     margin-bottom: 2rem;
 }
 
@@ -682,7 +685,7 @@ textarea{
         display: flex;
     }
     .navbar {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -100%;
         width: 300px;
@@ -691,7 +694,7 @@ textarea{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px 20px;
+        padding: 80px 20px;
         transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .open-menu {
@@ -701,6 +704,7 @@ textarea{
     .nav-link {
         display: block;
         margin: 1rem 0;
+        font-size: 1.1rem;
     }
 }
 
@@ -732,8 +736,8 @@ textarea{
         padding-top: 5rem;
     }
     .home-img {
-        width: 140px;
-        height: 140px;
+        width: 250px;
+        height: 250px;
     }
     .home-img img {
         width: 140px;
@@ -775,5 +779,9 @@ textarea{
     }
     .portfolio-box {
         height: 190px;
+    }
+    .home-img {
+        width: 200px;
+        height: 200px;
     }
 }
