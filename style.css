@@ -164,18 +164,13 @@ header {
     background-color: #98a7fc;
     overflow: hidden;
     margin-bottom: 2rem;
-    background-image: url('./asset/OD4.png') ;
-    background-size: cover;
-    background-position: center;
-    /* object-fit: contain;
-    object-position: center; */
 }
-.pics{
-    display: none;
-    width: 150px;
-    height: 180px;
-    background-size: contain;
-    /* background-position: center; */
+
+.pics {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .home-text {
