@@ -4,10 +4,71 @@
 
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAVID ONWULI</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="asset/DavidOnwuli.png" as="image">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <title>DAVID ONWULI | Backend Developer Portfolio | API & Database Expert</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="DAVID ONWULI | Backend Developer Portfolio | API & Database Expert">
+    <meta name="description" content="Onwuli David - Expert Backend Developer specializing in API development, database infrastructure, and scalable applications. View portfolio, projects, and contact for collaboration.">
+    <meta name="keywords" content="David Onwuli, Backend Developer, Software Engineer, API Development, Database Infrastructure, Node.js, Python, JavaScript, MongoDB, PostgreSQL, API Design, Database Management, Software Architecture">
+    <meta name="author" content="David Onwuli">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://cazicruz.github.io/portfolio/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cazicruz.github.io/portfolio/">
+    <meta property="og:title" content="DAVID ONWULI | Backend Developer Portfolio | API & Database Expert">
+    <meta property="og:description" content="Expert Backend Developer specializing in API development, database infrastructure, and scalable applications. View portfolio, projects, and contact for collaboration.">
+    <meta property="og:image" content="https://cazicruz.github.io/portfolio/asset/DavidOnwuli.png">
+    <meta property="og:site_name" content="David Onwuli Portfolio">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cazicruz.github.io/portfolio/">
+    <meta name="twitter:title" content="DAVID ONWULI | Backend Developer Portfolio | API & Database Expert">
+    <meta name="twitter:description" content="Expert Backend Developer specializing in API development, database infrastructure, and scalable applications. View portfolio, projects, and contact for collaboration.">
+    <meta name="twitter:image" content="https://cazicruz.github.io/portfolio/asset/DavidOnwuli.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="asset/OD4.png" type="image/png">
+    <link rel="apple-touch-icon" href="asset/OD4.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "David Onwuli",
+        "url": "https://cazicruz.github.io/portfolio/",
+        "image": "https://cazicruz.github.io/portfolio/asset/DavidOnwuli.png",
+        "sameAs": [
+            "https://www.linkedin.com/in/david-onwuli-6043b723a/",
+            "https://twitter.com/OnwuliDavi79772",
+            "https://github.com/cazicruz"
+        ],
+        "jobTitle": "Backend Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "description": "Expert Backend Developer specializing in API development, database infrastructure, and scalable applications."
+    }
+    </script>
 
     <!-- animation -->
     <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
@@ -19,38 +80,46 @@
 
     <!--link to icons-->
     <link href='../unpkg.com/boxicons%402.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="../unpkg.com/aos%402.3.1/dist/aos.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' media="print" onload="this.media='all'">
+    <link href='../unpkg.com/boxicons%402.1.2/css/boxicons.min.css' rel='stylesheet' media="print" onload="this.media='all'">
 </head>
 
 
 <body>
     <!--scroll top arrow-->
     <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt' ></i></a>
-    <header id="header">
+    <header id="header" role="banner">
         <div class="nav container">
             <!--logo-->
-            <a href="#" class="logo">DavDEV</a>
+            <a href="#" class="logo" aria-label="David Onwuli Portfolio Home">DavDEV</a>
             <!--Navbar-->
-            <ul class="navbar">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#service" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#skills" class="nav-link">Skills & Experience</a></li>
-                <li><a href="#project" class="nav-link">Project</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="menu-icon">
+            <nav>
+                <ul class="navbar" role="navigation">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#service" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#skills" class="nav-link">Skills & Experience</a></li>
+                    <li><a href="#project" class="nav-link">Project</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-icon" aria-label="Toggle navigation menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </button>
         </div>
     </header>
     <!--home-->
-    <section class="home container" id="home">
+    <section class="home container" id="home" role="main">
         <div class="home-content">
             <div class="home-img">
-                <img src="/asset/DavidOnwuli.png" alt="David Onwuli" class="pics">
+                <img src="/asset/DavidOnwuli.png" alt="David Onwuli - Backend Developer and Software Engineer" class="pics">
             </div>
             <div class="home-text" data-aos="fade-up" data-aos-duration="1500">
                 <h3>WELCOME</h3>
@@ -125,27 +194,27 @@
         <!--portfolio content-->
         <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="asset/market.png" alt="" class="portfolio-img">
+                <img src="asset/market.png" alt="E-commerce Market Project - Backend Development" class="portfolio-img">
                 <!--overlay-->
                 <div class="portfolio-overlay">
                     <h2>Projects</h2>
-                    <a href="https://market-0i1z.onrender.com/" target="_blank"><i class='bx bx-link-alt' ></i></a>
+                    <a href="https://market-0i1z.onrender.com/" target="_blank" aria-label="View E-commerce Market Project"><i class='bx bx-link-alt'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="asset/sm-retail.png" alt="" class="portfolio-img">
+                <img src="asset/sm-retail.png" alt="SM Retail Project - Backend Development" class="portfolio-img">
                 <!--overlay-->
                 <div class="portfolio-overlay">
                     <h2>Projects</h2>
-                    <a href="https://sm-reseler.onrender.com/" target="_blank"><i class='bx bx-link-alt' ></i></a>
+                    <a href="https://sm-reseler.onrender.com/" target="_blank" aria-label="View SM Retail Project"><i class='bx bx-link-alt'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="asset/otb.png" alt="" class="portfolio-img">
+                <img src="asset/otb.png" alt="OTB Opportunities Project - Backend Development" class="portfolio-img">
                 <!--overlay-->
                 <div class="portfolio-overlay">
                     <h2>Projects</h2>
-                    <a href="https://www.otbopportunities.com/" target="_blank"><i class='bx bx-link-alt' ></i></a>
+                    <a href="https://www.otbopportunities.com/" target="_blank" aria-label="View OTB Opportunities Project"><i class='bx bx-link-alt'></i></a>
                 </div>
             </div>
         </div>
@@ -233,17 +302,17 @@
     <!--contact-->
     <section class="contact container" id="contact">
         <!--heading-->
-        <h2 class="heading" data-aos="fade-right">contact</h2>
+        <h2 class="heading" data-aos="fade-right">Contact</h2>
         <!--contact form -->
-        <form  data-aos-duration="1200" data-aos="fade-up" class="contact-form" id="contact-form">
-            <input type="text" name='name' class="name" placeholder="Your Name" required> <br>
-            <input type="text" name='email' class="email" placeholder="Email address..." required> <br>
-            <textarea cols="30" name='message' rows="10" placeholder="Write your message here ..." class="message"></textarea>
-            <button type="submit"  class="send-btn"> Contact Me</button>
+        <form data-aos-duration="1200" data-aos="fade-up" class="contact-form" id="contact-form" role="form" aria-label="Contact Form">
+            <input type="text" name='name' class="name" placeholder="Your Name" required aria-label="Your Name"> <br>
+            <input type="email" name='email' class="email" placeholder="Email address..." required aria-label="Your Email"> <br>
+            <textarea cols="30" name='message' rows="10" placeholder="Write your message here ..." class="message" aria-label="Your Message"></textarea>
+            <button type="submit" class="send-btn" aria-label="Send Message">Contact Me</button>
         </form>
     </section>
     <!--footer-->
-    <section class="footer footer-container" id="footer">
+    <footer class="footer footer-container" id="footer" role="contentinfo">
         <div class="social">
             <a href="mailto:davidonwuli8@gmail.com" class="bx bxs-envelope"></a>
             <a href="https://www.linkedin.com/in/david-onwuli-6043b723a/" target="_blank" class="bx bxl-linkedin-square"></a>
@@ -258,42 +327,42 @@
         </div>
         <!--copyright-->
         <p>&#169 2024 DavDEV All Rights Reserved</p>
-    </section>
+    </footer>
     
-    <script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <!-- Defer non-critical JavaScript -->
+    <script src="../unpkg.com/aos%402.3.1/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    
+    <!-- Initialize AOS and EmailJS -->
     <script>
-        AOS.init();
-    </script>
-        <!--Link to swiper js-->
-    <script defer src="script.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({publicKey:'Q5CM655g3RRrOHjss',}); // Replace with your EmailJS user ID
-        })();
-    </script>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-    
-            // These IDs from the previous steps
-            const serviceID = 'service_36cdms7';
-            const templateID = 'template_zcdasfm';
-            let templateParams ={
-                to_name:'David',
-                from_name:document.querySelector('.name').value,
-                email:document.querySelector('.email').value,
-                message:document.querySelector('.message').value
-            }
-    
-            emailjs.send(serviceID, templateID, templateParams )
-                .then(() => {
-                    alert('Email sent successfully!');
-                }, (err) => {
-                    alert('Failed to send email: ' + JSON.stringify(err));
-                });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init();
+            
+            // Initialize EmailJS
+            emailjs.init({publicKey:'Q5CM655g3RRrOHjss'});
+            
+            // Contact form handler
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                const serviceID = 'service_36cdms7';
+                const templateID = 'template_zcdasfm';
+                let templateParams = {
+                    to_name: 'David',
+                    from_name: document.querySelector('.name').value,
+                    email: document.querySelector('.email').value,
+                    message: document.querySelector('.message').value
+                }
+        
+                emailjs.send(serviceID, templateID, templateParams)
+                    .then(() => {
+                        alert('Email sent successfully!');
+                    }, (err) => {
+                        alert('Failed to send email: ' + JSON.stringify(err));
+                    });
+            });
         });
     </script>
 </body>

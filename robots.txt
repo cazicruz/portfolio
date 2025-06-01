@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://cazicruz.github.io/portfolio/sitemap.xml 
