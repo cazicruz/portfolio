@@ -28,26 +28,46 @@
     <!-- Preload critical assets -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blog.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!--scroll top arrow-->
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+    
     <header id="header" role="banner">
         <div class="nav container">
+            <!--logo-->
             <a href="index.html" class="logo" aria-label="David Onwuli Portfolio Home">DavDEV</a>
+            <!--Navbar-->
             <nav>
                 <ul class="navbar" role="navigation">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="index.html#about" class="nav-link">About</a></li>
                     <li><a href="index.html#service" class="nav-link">Services</a></li>
                     <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills & Experience</a></li>
+                    <!-- <li><a href="index.html#project" class="nav-link">Project</a></li> -->
                     <li><a href="blog.html" class="nav-link active">Blog</a></li>
                     <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <button class="menu-icon" style="border:none" aria-label="Toggle navigation menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
         </div>
     </header>
 
@@ -89,10 +109,10 @@
 
     <footer class="footer footer-container" role="contentinfo">
         <div class="social">
-            <a href="mailto:davidonwuli8@gmail.com" class="bx bxs-envelope"></a>
-            <a href="https://www.linkedin.com/in/david-onwuli-6043b723a/" target="_blank" class="bx bxl-linkedin-square"></a>
-            <a href="https://twitter.com/OnwuliDavi79772" target="_blank" class="bx bxl-twitter"></a>
-            <a href="https://github.com/cazicruz" target="_blank" class="bx bxl-github"></a>
+            <a href="mailto:davidonwuli8@gmail.com" aria-label="Email" class="bx bxs-envelope"></a>
+            <a href="https://www.linkedin.com/in/david-onwuli-6043b723a/" aria-label="LinkedIn Profile" target="_blank" class="bx bxl-linkedin-square"></a>
+            <a href="https://twitter.com/OnwuliDavi79772" aria-label="Twitter Profile" target="_blank" class="bx bxl-twitter"></a>
+            <a href="https://github.com/cazicruz" aria-label="GitHub Profile" target="_blank" class="bx bxl-github"></a>
         </div>
         <div class="footer-links">
             <a href="#">Privacy Policy</a>
@@ -102,6 +122,7 @@
         <p>&#169 2024 DavDEV All Rights Reserved</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <!-- Defer non-critical JavaScript -->
+    <script src="script.js" defer onerror="console.warn('Failed to load main script');"></script>
 </body>
 </html> 

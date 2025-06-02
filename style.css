@@ -708,15 +708,25 @@ textarea{
         align-items: center;
         padding: 80px 20px;
         transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .navbar::-webkit-scrollbar {
+        display: none;
     }
     .open-menu {
         right: 0;
         transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .nav-link {
-        display: block;
+        display: inline-block;
         margin: 1rem 0;
         font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+    }
+    .nav-link:not(:last-child) {
+        border-right: 1px solid var(--main-color);
     }
 }
 
