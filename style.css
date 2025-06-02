@@ -16,7 +16,7 @@
     --container-color: #171b3c;
     --heading-color: #9a9add;
     --box-color: #0d0f26;
-    --bg-color: #fff;
+    --bg-color: #c5bbbb;
 }
 
 body {
@@ -112,7 +112,7 @@ header {
     cursor: pointer;
     z-index: 200;
     transition: 0.3s;
-    background-color: var(--container-color);
+    background-color: var(--body-color);
     padding: 5px;
 }
 
@@ -172,7 +172,7 @@ header {
 .pics {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 50%;
 }
 
@@ -245,6 +245,7 @@ header {
 
 .social .bx:hover {
     background-color: var(--main-color);
+    color: var(--bg-color);
     transition: 0.3s all linear;
 }
 /*heading*/
